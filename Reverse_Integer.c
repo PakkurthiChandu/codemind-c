@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,r=0;
+    scanf("%d",&a);
+    if(a<0)
+    {
+        a=-1*a;
+    while(1)
+    {
+        b=a%10;
+        a=a/10;
+        r=(r*10)+b;
+        if(a==0)
+        {
+            break;
+        }
+    }
+    printf("-%d",r);
+    }
+    else
+    {
+        while(1)
+    {
+        b=a%10;
+        a=a/10;
+        r=(r*10)+b;
+        if(a==0)
+        {
+            break;
+        }
+    }
+    printf("%d",r);
+    }
+}
