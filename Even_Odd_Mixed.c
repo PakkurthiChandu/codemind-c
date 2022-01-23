@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c=0,d=0;
+    scanf("%d",&a);
+    while(1)
+    {
+        b=a%10;
+        a=a/10;
+        if(b%2==0)
+        {
+            c+=1;
+        }
+       else
+        {
+            d+=1;
+        }
+        if(a==0)
+        {
+            break;
+        }
+    }
+    if(c!=0&&d==0)
+    {
+        printf("Even");
+    }
+    if(c==0&&d!=0)
+    {
+        printf("Odd");
+    }
+    if(c!=0&&d!=0)
+    {
+        printf("Mixed");
+    }
+}
