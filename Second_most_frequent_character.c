@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+	char a[100],f,s;
+	scanf("%[^
+]",a);
+	int i,j,c=0,max=0,max1=0;;
+	for(i=0;a[i]!=NULL;i++)
+	{
+		for(j=0;a[j]!=NULL;j++)
+		{
+			if(a[i]==a[j])
+			{
+				c+=1;
+			}//printf("%d",c);
+		}
+		if(c>max)
+		{
+			max1=max;
+			max=c;
+			s=f;
+			f=a[i];
+		}
+		if(c<max&&c>max1)
+		{
+			max1=c;
+			s=a[i];
+		}
+		c=0;
+	}
+	if(max1==0)
+	{
+		printf("-1");
+	} 
+	else
+	{
+	printf("%c",s);
+}
+}
