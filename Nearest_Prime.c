@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 int pr(int a)
 {
@@ -24,15 +23,14 @@ int main()
   for(i=0;i<a;i++)
   {
   	scanf("%d",&b[i]);
-	  }	
-	  for(i=0;i<a;i++)
-	  {
-	  	t=b[i];
+  }	
+  for(i=0;i<a;i++)
+ {
 	  	for(t=b[i];t>0;t--)
 	  	{
 	  		if(pr(t))
 	  		{
-	  			//printf("%d",t);
+	  		   
 	  			break;
 			  }
 		  }
@@ -40,7 +38,6 @@ int main()
 	  	{
 	  		if(pr(k))
 	  		{
-	  			//printf("%d",k);
 	  			break;
 			  }
 		  }
@@ -55,4 +52,4 @@ int main()
 ",k);
 		  }
 	  }
-}
+} 
