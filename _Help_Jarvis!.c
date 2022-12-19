@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int n,s,t,b,m,i,a,mi;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a);
+        s=0;
+        m=-1;
+        mi=10;
+        while(a!=0)
+        {
+            b=a%10;
+            a=a/10;
+            s+=b;
+            if(b>m)
+            m=b;
+            if(b<mi)
+            mi=b;
+        }
+        mi=mi-1;
+        t=(m*(m+1))/2-(mi*(mi+1))/2;
+        if(t==s)
+        {
+            printf("YES
+");
+        }
+        else
+        printf("NO
+");
+    }
+}
